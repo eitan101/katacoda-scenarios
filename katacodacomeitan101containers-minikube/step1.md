@@ -1,9 +1,11 @@
 
 ## command 1
+## command 1
+`alias build-machine='docker run --rm -it -v $PWD:/my -w /my maven:3-jdk-9-slim'`{{execute}}
 
 
 ## command 1
-`docker run --rm -it -v $PWD:/my -w /my maven:3-jdk-9-slim mvn -q archetype:generate`{{execute}}
+`build-machine mvn -q archetype:generate`{{execute}}
 
 ```
 #filter: dropwizard-app (1.1), item #1, group: grp, artifactId:myapp
@@ -13,13 +15,13 @@
 `cd myapp`{{execute}}
 
 ## command 1
-`docker run --rm -it -v $PWD:/my -w /my maven:3-jdk-9-slim mvn -q package`{{execute}}
+`build-machine mvn -q package`{{execute}}
 
 ## command 1
 `minikube start`{{execute}}
 
 ## command 1
-`docker pull mysql`{{execute}}
+`docker-compose pull`{{execute}}
 
 ## command 1
 `docker-compose build`{{execute}}
