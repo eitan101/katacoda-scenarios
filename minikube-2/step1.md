@@ -5,10 +5,12 @@
 * `build-machine mvn -q package`{{execute}}
 * `minikube start`{{execute}}
 * `docker pull mysql`{{execute}}
-* `kubectl apply -f  https://eitan101.github.io/containers/manifests-examples/k8s.yml`{{execute}}
+* `docker-compose build`{{execute}}
+* `kubectl apply -f k8s.yml`{{execute}}
 * [open minikube dashboard](https://[[HOST_SUBDOMAIN]]-30000-[[KATACODA_HOST]].environments.katacoda.com/)
 * `watch kubectl get pods`{{execute}}
-* [open service page](https://[[HOST_SUBDOMAIN]]-30080-[[KATACODA_HOST]].environments.katacoda.com/)
-* `wget https://eitan101.github.io/containers/manifests-examples/k8s.yml`{{execute}}
+* `minikube service list`{{execute}}
+* [open service page](https://[[HOST_SUBDOMAIN]]-[[KATACODA_HOST]].environments.katacoda.com/)
 * `kubectl apply -f k8s.yml`{{execute}}
-* `kubectl logs -f podname`{{execute}}
+* `kubectl get pods`{{execute}}
+* `kubectl logs -f $PODNAME`{{execute}}
