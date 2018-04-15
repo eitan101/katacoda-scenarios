@@ -1,6 +1,16 @@
 
 ## command 1
-`git clone https://github.com/eitan101/containers.git && cd containers/myapp`{{execute}}
+
+
+## command 1
+`docker run --rm -it -v $PWD:/my -w /my maven:3-jdk-9-slim mvn -q archetype:generate`{{execute}}
+
+```
+#filter: dropwizard-app (1.1), item #1, group: grp, artifactId:myapp
+```
+
+## command 1
+`cd myapp`{{execute}}
 
 ## command 1
 `docker run --rm -it -v $PWD:/my -w /my maven:3-jdk-9-slim mvn -q package`{{execute}}
