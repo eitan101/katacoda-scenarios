@@ -21,7 +21,7 @@
 `minikube start`{{execute}}
 
 ## command 1
-`docker-compose pull`{{execute}}
+`docker pull mysql`{{execute}}
 
 ## command 1
 `docker-compose build`{{execute}}
