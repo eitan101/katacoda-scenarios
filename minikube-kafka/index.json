@@ -1,0 +1,24 @@
+{
+  "title": "minikube kafka with remote manifests",
+  "description": "simple kafka demo",
+  "details": {
+    "steps": [
+      {
+        "title": "Commands",
+        "text": "step1.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "editor-terminal"
+  },
+  "backend": {
+    "imageid": "minikube"
+  }
+}
