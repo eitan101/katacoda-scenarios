@@ -1,4 +1,3 @@
-
 * `alias build-machine='docker run --rm -it -v $PWD:/my -w /my maven:3-jdk-9-slim'`{{execute}}
 * `build-machine mvn -q archetype:generate`{{execute}} (filter: dropwizard-app (1.1), item #1, group: grp, artifactId:myapp)
 * `cd myapp`{{execute}}
